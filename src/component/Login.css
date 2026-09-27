@@ -1,0 +1,185 @@
+
+/* Full Login Page */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Background Image */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/imagee.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+/* Dark layer over background */
+
+.login-page::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+/* Login Box */
+
+.login-container {
+  width: 350px;
+
+  padding: 35px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+
+  z-index: 1;
+
+  box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.login-container h2 {
+  text-align: center;
+
+  color: #333;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 28px;
+}
+
+
+/* Labels */
+
+.login-container label {
+  display: block;
+
+  font-weight: bold;
+
+  color: #444;
+
+  margin-bottom: 7px;
+}
+
+
+/* Input Fields */
+
+.login-container input {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 5px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+
+/* Input Focus */
+
+.login-container input:focus {
+  border-color: #007bff;
+
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+
+/* Login Button */
+
+.login-container button {
+  width: 100%;
+
+  padding: 12px;
+
+  background-color: #007bff;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* Button Hover */
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Register Link */
+
+.login-container a {
+  display: block;
+
+  text-align: center;
+
+  color: #007bff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+
+/* Link Hover */
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile Screen */
+
+@media (max-width: 500px) {
+
+  .login-container {
+    width: 90%;
+
+    padding: 25px;
+  }
+
+}
+

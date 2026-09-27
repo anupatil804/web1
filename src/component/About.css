@@ -1,0 +1,98 @@
+.about {
+  min-height: calc(100vh - 100px);
+  padding: 60px 20px;
+  text-align: center;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../assets/about.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Main white card */
+
+.about-container {
+  width: 80%;
+  max-width: 850px;
+  padding: 50px 60px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+  border-top: 5px solid #black;
+}
+
+/* Heading */
+
+.about h1 {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Pink line below heading */
+
+.about-line {
+  width: 80px;
+  height: 4px;
+  background: #black;
+  margin: 0 auto 35px;
+  border-radius: 10px;
+}
+
+/* Paragraphs */
+
+.about p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #444;
+  margin: 20px 0;
+}
+
+/* Welcome text */
+
+.about .welcome {
+  font-size: 25px;
+  font-weight: bold;
+  color: #black;
+  margin-bottom: 25px;
+}
+
+/* Mobile screen */
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-container {
+    width: 90%;
+    padding: 35px 25px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .about .welcome {
+    font-size: 21px;
+  }
+}
