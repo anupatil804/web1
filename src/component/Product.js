@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Product.css";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +13,6 @@ import Product7 from "../assets/product7.jpg";
 import Product8 from "../assets/product8.jpg";
 
 function Product() {
-
   const navigate = useNavigate();
 
   const products = [
@@ -34,7 +34,7 @@ function Product() {
       id: 3,
       name: "Watch",
       price: 999,
-      description: "good and stylish Watch.",
+      description: "Good and stylish watch.",
       image: Product3
     },
     {
@@ -60,23 +60,24 @@ function Product() {
     },
     {
       id: 7,
-      name: "School bag",
+      name: "School Bag",
       price: 1799,
       description: "Attractive bags.",
       image: Product7
     },
     {
-      iid: 8,
-  name: "ladies shoes",
+      
+  id: 8,
+  name: "Ladies Shoes",
   price: 1799,
   description: "Attractive and stylish shoes.",
-    }
+  image: Product8
+}
+    
   ];
 
   function addToCart(product) {
-
-    let cart =
-      JSON.parse(localStorage.getItem("cart")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.push(product);
 
@@ -89,7 +90,6 @@ function Product() {
   }
 
   function buyNow(product) {
-
     localStorage.setItem(
       "buyNowProduct",
       JSON.stringify(product)
@@ -108,19 +108,16 @@ function Product() {
       <div className="product-container">
 
         {products.map((product) => (
-
           <div
             className="product-card"
             key={product.id}
           >
 
             <div className="product-image">
-
               <img
                 src={product.image}
                 alt={product.name}
               />
-
             </div>
 
             <div className="product-details">
@@ -152,7 +149,6 @@ function Product() {
             </div>
 
           </div>
-
         ))}
 
       </div>
