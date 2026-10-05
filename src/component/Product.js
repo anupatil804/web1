@@ -66,12 +66,10 @@ function Product() {
       image: Product7
     },
     {
-      id: 8,
-      name: "ladies shoes
-      ",
-      price: 1799,
-      description: "Attractive and stylish shoes.",
-      image: Product8
+      iid: 8,
+  name: "ladies shoes",
+  price: 1799,
+  description: "Attractive and stylish shoes.",
     }
   ];
 

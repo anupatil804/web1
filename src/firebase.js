@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBa73AtzPLJrrYvXHGB4qp5Cw79C2mdrrM",
-  authDomain: "webproject-48f23.firebaseapp.com",
-  projectId: "webproject-48f23",
-  storageBucket: "webproject-48f23.firebasestorage.app",
-  messagingSenderId: "323298714813",
-  appId: "1:323298714813:web:a5076e44294a9aeb9cc3d4",
-  measurementId: "G-JKY5BSMWLC"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
@@ -18,5 +18,5 @@ export const auth = getAuth(app);
 
 export const db = getDatabase(
   app,
-  "https://webproject-48f23-default-rtdb.firebaseio.com"
+  process.env.REACT_APP_FIREBASE_DATABASE_URL
 );
